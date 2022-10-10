@@ -61,6 +61,7 @@ EOF
 	if [[ "$SUPPORTED_BROWSERS" == *"firefox"* || "$SUPPORTED_BROWSERS" == *"chromium"* ]]; then
 		cat << EOF >>$build_tmpdir/Aptfile
 # Needed by Firefox and Chromium
+playwright-core
 libgdk-pixbuf2.0-0
 libcairo-gobject2
 libpulse0
